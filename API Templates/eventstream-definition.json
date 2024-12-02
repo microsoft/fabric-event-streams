@@ -1,449 +1,471 @@
 {
-    "sources": [
-      {
-        "name": "AzureEventHubSource",
-        "type": "AzureEventHub",
-        "properties": {
-          "dataConnectionId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-          "consumerGroupName": "$Default",
-          "inputSerialization": {
-            "type": "Json",
-            "properties": {
-              "encoding": "UTF8"
-            }
+  "sources": [
+    {
+      "name": "AzureEventHubSource",
+      "type": "AzureEventHub",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "consumerGroupName": "$Default",
+        "inputSerialization": {
+          "type": "Json",
+          "properties": {
+            "encoding": "UTF8"
           }
         }
-      },
-      {
-        "name": "AzureIoTHubSource",
-        "type": "AzureIoTHub",
-        "properties": {
-            "dataConnectionId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-            "consumerGroupName": "$Default",
-            "inputSerialization": {
-                "type": "Json",
-                "properties": {
-                    "encoding": "UTF8"
-                }
-            }
-        }
+      }
     },
     {
-        "name": "CustomEndpointSource",
-        "type": "CustomEndpoint",
-        "properties": {}
-    },
-    {
-        "name": "SampleDataSource",
-        "type": "SimpleData",
-        "properties": {
-            "sampleType": "Bicycles"
-        }
-    },
-    {
-        "name": "AmazonKinesisSource",
-        "type": "AmazonKinesis",
-        "properties": {
-            "dataConnectionId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-            "region": "us-east-1"
-        }
-    },
-    {
-        "name": "AmazonMSKKafkaSource",
-        "type": "AmazonMSKKafka",
-        "properties": {
-            "dataConnectionId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-            "topic": "topic",
-            "consumerGroupName": "consumerGroupName",
-            "autoOffsetReset": "Earliest",
-            "saslMechanism": "PLAIN",
-            "securityProtocol": "SASL_PLAINTEXT"
-        }
-    },
-    {
-        "name": "ApacheKafkaSource",
-        "type": "ApacheKafka",
-        "properties": {
-            "dataConnectionId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-            "topic": "topic",
-            "consumerGroupName": "consumerGroupName",
-            "autoOffsetReset": "Latest",
-            "saslMechanism": "SCRAM-SHA-512",
-            "securityProtocol": "SASL_SSL"
-        }
-    },
-    {
-        "name": "ConfluentCloudSource",
-        "type": "ConfluentCloud",
-        "properties": {
-            "dataConnectionId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-            "topic": "topic",
-            "consumerGroupName": "consumerGroupName",
-            "autoOffsetReset": "Earliest"
-        }
-    },
-    {
-        "name": "AzureCosmosDBCDCSource",
-        "type": "AzureCosmosDBCDC",
-        "properties": {
-            "dataConnectionId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-            "containerName": "containerName",
-            "databaseName": "databaseName",
-            "offsetPolicy": "Earliest"
-        }
-    },
-    {
-        "name": "AzureSQLDBCDCSource",
-        "type": "AzureSQLDBCDC",
-        "properties": {
-            "dataConnectionId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-            "tableName": "tableName"
-        }
-    },
-    {
-        "name": "AzureSQLMIDBCDCSource",
-        "type": "AzureSQLMIDBCDC",
-        "properties": {
-            "dataConnectionId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-            "tableName": "tableName"
-        }
-    },
-    {
-        "name": "SQLServerOnVMDBCDCSource",
-        "type": "SQLServerOnVMDBCDC",
-        "properties": {
-            "dataConnectionId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-            "tableName": "tableName"
-        }
-    },
-    {
-        "name": "MySQLCDCSource",
-        "type": "MySQLCDC",
-        "properties": {
-            "dataConnectionId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-            "tableName": "tableName",
-            "serverId": 9,
-            "port": 3306
-        }
-    },
-    {
-        "name": "PostgreSQLCDCSource",
-        "type": "PostgreSQLCDC",
-        "properties": {
-            "dataConnectionId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-            "tableName": "tableName",
-            "slotName": "slotName",
-            "port": 5432
-        }
-    },
-    {
-        "name": "GooglePubSubSource",
-        "type": "GooglePubSub",
-        "properties": {
-            "dataConnectionId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-        }
-    }
-    ],
-    "destinations": [
-      {
-        "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "name": "EventhouseDestination",
-        "type": "Eventhouse",
-        "properties": {
-          "dataIngestionMode": "ProcessedIngestion",
-          "workspaceId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-          "itemId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-          "databaseName": "mydatabase",
-          "tableName": "mytable",
-          "inputSerialization": {
-            "type": "Json",
-            "properties": {
-              "encoding": "UTF8"
-            }
+      "name": "AzureIoTHubSource",
+      "type": "AzureIoTHub",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "consumerGroupName": "$Default",
+        "inputSerialization": {
+          "type": "Json",
+          "properties": {
+            "encoding": "UTF8"
           }
-        },
-        "inputNodes": []
-      },
-      {
-        "name": "CustomEndpointDestination",
-        "type": "CustomEndpoint",
-        "properties": {},
-        "inputNodes": [
-            {
-                "name": "DerivedStreamName"
-            }
-        ]
+        }
+      }
     },
     {
-        "name": "LakehouseDestination",
-        "type": "Lakehouse",
-        "properties": {
-            "workspaceId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-            "itemId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-            "schema": "dbo",
-            "deltaTable": "deltaTable",
-            "minimumRows": 100000,
-            "maximumDurationInSeconds": 120,
-            "inputSerialization": {
-                "type": "Json",
-                "properties": {
-                    "encoding": "UTF8"
-                }
-            }
-        },
-        "inputNodes": [
-            {
-                "name": "DerivedStreamName"
-            }
+      "name": "CustomEndpointSource",
+      "type": "CustomEndpoint",
+      "properties": {}
+    },
+    {
+      "name": "SampleDataSource",
+      "type": "SampleData",
+      "properties": {
+        "type": "Bicycles"
+      }
+    },
+    {
+      "name": "AmazonKinesisSource",
+      "type": "AmazonKinesis",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "region": "us-east-1"
+      }
+    },
+    {
+      "name": "AmazonMSKKafkaSource",
+      "type": "AmazonMSKKafka",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "topic": "topic",
+        "consumerGroupName": "consumerGroupName",
+        "autoOffsetReset": "Earliest",
+        "saslMechanism": "PLAIN",
+        "securityProtocol": "SASL_PLAINTEXT"
+      }
+    },
+    {
+      "name": "ApacheKafkaSource",
+      "type": "ApacheKafka",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "topic": "topic",
+        "consumerGroupName": "consumerGroupName",
+        "autoOffsetReset": "Latest",
+        "saslMechanism": "SCRAM-SHA-512",
+        "securityProtocol": "SASL_SSL"
+      }
+    },
+    {
+      "name": "ConfluentCloudSource",
+      "type": "ConfluentCloud",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "topic": "sales-data",
+        "consumerGroupName": "my-consumergroup",
+        "autoOffsetReset": "Earliest"
+      }
+    },
+    {
+      "name": "AzureCosmosDBCDCSource",
+      "type": "AzureCosmosDBCDC",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "containerName": "containerName",
+        "databaseName": "databaseName",
+        "offsetPolicy": "Earliest"
+      }
+    },
+    {
+      "name": "AzureSQLDBCDCSource",
+      "type": "AzureSQLDBCDC",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "tableName": ""
+      }
+    },
+    {
+      "name": "AzureSQLMIDBCDCSource",
+      "type": "AzureSQLMIDBCDC",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "tableName": "tableName"
+      }
+    },
+    {
+      "name": "SQLServerOnVMDBCDCSource",
+      "type": "SQLServerOnVMDBCDC",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "tableName": "tableName"
+      }
+    },
+    {
+      "name": "MySQLCDCSource",
+      "type": "MySQLCDC",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "tableName": "tableName",
+        "serverId": 9,
+        "port": 3306
+      }
+    },
+    {
+      "name": "PostgreSQLCDCSource",
+      "type": "PostgreSQLCDC",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "tableName": "tableName",
+        "slotName": "slotName",
+        "port": 5432
+      }
+    },
+    {
+      "name": "GooglePubSubSource",
+      "type": "GooglePubSub",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
+      }
+    },
+    {
+      "name": "FabricWorkspaceItemEvents",
+      "type": "FabricWorkspaceItemEvents",
+      "properties": {
+        "eventScope": "Workspace",
+        "workspaceId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "includedEventTypes": [
+          "Microsoft.Fabric.ItemCreateSucceeded",
+          "Microsoft.Fabric.ItemCreateFailed",
+          "Microsoft.Fabric.ItemUpdateSucceeded",
+          "Microsoft.Fabric.ItemUpdateFailed",
+          "Microsoft.Fabric.ItemDeleteSucceeded",
+          "Microsoft.Fabric.ItemDeleteFailed",
+          "Microsoft.Fabric.ItemReadSucceeded",
+          "Microsoft.Fabric.ItemReadFailed"
         ],
-        "startOnCreated": true
+        "advancedFilters": []
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "name": "EventhouseDestination",
+      "type": "Eventhouse",
+      "properties": {
+        "dataIngestionMode": "ProcessedIngestion",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "databaseName": "my-database",
+        "tableName": "my-table",
+        "inputSerialization": {
+          "type": "Json",
+          "properties": {
+            "encoding": "UTF8"
+          }
+        }
+      },
+      "inputNodes": []
     },
     {
-        "name": "EventhousePushModeDestination",
-        "type": "Eventhouse",
-        "properties": {
-            "dataIngestionMode": "ProcessedIngestion",
-            "workspaceId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-            "itemId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-            "databaseName": "databaseName",
-            "tableName": "tableName",
-            "inputSerialization": {
-                "type": "Json",
-                "properties": {
-                    "encoding": "UTF8"
-                }
-            }
-        },
-        "inputNodes": []
+      "name": "CustomEndpointDestination",
+      "type": "CustomEndpoint",
+      "properties": {},
+      "inputNodes": [
+        {
+          "name": "my-eventstream"
+        }
+      ]
+    },
+    {
+      "name": "LakehouseDestination",
+      "type": "Lakehouse",
+      "properties": {
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "schema": "dbo",
+        "deltaTable": "deltaTable",
+        "minimumRows": 100000,
+        "maximumDurationInSeconds": 120,
+        "inputSerialization": {
+          "type": "Json",
+          "properties": {
+            "encoding": "UTF8"
+          }
+        }
+      },
+      "inputNodes": [
+        {
+          "name": "my-eventstream"
+        }
+      ]
+    },
+    {
+      "name": "EventhousePushModeDestination",
+      "type": "Eventhouse",
+      "properties": {
+        "dataIngestionMode": "ProcessedIngestion",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "databaseName": "databaseName",
+        "tableName": "tableName",
+        "inputSerialization": {
+          "type": "Json",
+          "properties": {
+            "encoding": "UTF8"
+          }
+        }
+      },
+      "inputNodes": []
     }
-    ],
-    "streams": [
+  ],
+  "streams": [
+    {
+      "name": "my-eventstream",
+      "type": "DefaultStream",
+      "properties": {}
+    },
+    {
+      "name": "DerivedStreamName",
+      "type": "DerivedStream",
+      "properties": {
+        "inputSerialization": {
+          "type": "Json",
+          "properties": {
+            "encoding": "UTF8"
+          }
+        }
+      },
+      "inputNodes": [
         {
-            "name": "DerivedStreamName",
-            "type": "DerivedStream",
-            "properties": {
-                "inputSerialization": {
-                    "type": "Json",
-                    "properties": {
-                        "encoding": "UTF8"
-                    }
-                }
+          "name": "FilterName"
+        }
+      ]
+    }
+  ],
+  "operators": [
+    {
+      "name": "FilterName",
+      "type": "Filter",
+      "inputNodes": [
+        {
+          "name": "my-eventstream"
+        }
+      ],
+      "properties": {
+        "conditions": [
+          {
+            "column": {
+              "node": null,
+              "columnName": "BikepointID",
+              "columnPath": null,
+              "expressionType": "ColumnReference"
             },
-            "inputNodes": [
-                {
-                    "name": "FilterName"
-                }
-            ]
+            "operatorType": "NotEquals",
+            "value": {
+              "dataType": "Nvarchar(max)",
+              "value": "0",
+              "expressionType": "Literal"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "JoinerName",
+      "type": "Join",
+      "inputNodes": [
+        {
+          "name": "FilterName"
+        },
+        {
+          "name": "my-eventstream"
         }
-    ],
-    "operators": [
-        {
-            "name": "FilterName",
-            "type": "Filter",
-            "inputNodes": [],
-            "properties": {
-                "conditions": [
-                    {
-                        "column": {
-                            "node": "nodeName",
-                            "columnName": "columnName",
-                            "columnPath": [
-                                "path",
-                                "to",
-                                "column"
-                            ]
-                        },
-                        "operator": "Equals",
-                        "value": {
-                            "dataType": "nvarchar(max)",
-                            "value": "stringValue"
-                        }
-                    }
-                ]
+      ],
+      "properties": {
+        "joinType": "Inner",
+        "joinOn": [
+          {
+            "left": {
+              "node": "leftNodeName",
+              "columnName": "leftColumnName"
+            },
+            "right": {
+              "node": "rightNodeName",
+              "columnName": "rightColumnName"
             }
-        },
-        {
-            "name": "JoinerName",
-            "type": "Join",
-            "inputNodes": [
-                {
-                    "name": "FilterName"
-                },
-                {
-                    "name": "DerivedStreamName"
-                }
-            ],
-            "properties": {
-                "joinType": "Inner",
-                "joinOn": [
-                    {
-                        "left": {
-                            "node": "leftNodeName",
-                            "columnName": "leftColumnName"
-                        },
-                        "right": {
-                            "node": "rightNodeName",
-                            "columnName": "rightColumnName"
-                        }
-                    }
-                ],
-                "duration": {
-                    "value": 1,
-                    "unit": "Minute"
-                }
-            }
-        },
-        {
-            "name": "FieldsManagerName",
-            "type": "ManageFields",
-            "inputNodes": [
-                {
-                    "name": "DerivedStreamName"
-                }
-            ],
-            "properties": {
-                "columns": [
-                    {
-                        "type": "Rename",
-                        "properties": {
-                            "column": {
-                                "node": "renameNode",
-                                "columnName": "renameColumn"
-                            }
-                        },
-                        "alias": "renameAlias"
-                    },
-                    {
-                        "type": "Cast",
-                        "properties": {
-                            "targetDataType": "BigInt",
-                            "column": {
-                                "node": "castNode",
-                                "columnName": "castColumn"
-                            }
-                        },
-                        "alias": "castAlias"
-                    },
-                    {
-                        "type": "FunctionCall",
-                        "properties": {
-                            "functionName": "CharIndex",
-                            "arguments": [
-                                "a",
-                                {
-                                    "node": "functionCallNode",
-                                    "columnName": "functionCallColumn"
-                                },
-                                1
-                            ]
-                        },
-                        "alias": "indexOf"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "AggregatorName",
-            "type": "Aggregate",
-            "inputNodes": [
-                {
-                    "name": "DerivedStreamName"
-                }
-            ],
-            "properties": {
-                "aggregations": [
-                    {
-                        "aggregationFunction": "Average",
-                        "column": {
-                            "node": "aggregationNode",
-                            "columnName": "aggregationColumn"
-                        },
-                        "alias": "aggregatedAlias",
-                        "partitionBy": [
-                            {
-                                "node": "partitionByNode",
-                                "columnName": "partitionByColumn"
-                            }
-                        ],
-                        "duration": {
-                            "value": 1,
-                            "unit": "Minute"
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "name": "GroupByName",
-            "type": "GroupBy",
-            "inputNodes": [
-                {
-                    "name": "DerivedStreamName"
-                }
-            ],
-            "properties": {
-                "aggregations": [
-                    {
-                        "aggregationFunction": "Average",
-                        "column": {
-                            "node": "groupByAggregationNode",
-                            "columnName": "groupByAggregationColumn"
-                        },
-                        "alias": "groupByAggregationAlias"
-                    }
-                ],
-                "groupBy": [
-                    {
-                        "node": "groupByNode",
-                        "columnName": "groupByColumn"
-                    }
-                ],
-                "window": {
-                    "type": "Tumbling",
-                    "properties": {
-                        "duration": {
-                            "value": 5,
-                            "unit": "Minute"
-                        },
-                        "offset": {
-                            "value": 1,
-                            "unit": "Minute"
-                        }
-                    }
-                }
-            }
-        },
-        {
-            "name": "UnionName",
-            "type": "Union",
-            "inputNodes": [
-                {
-                    "name": "FilterName"
-                },
-                {
-                    "name": "GroupByName"
-                }
-            ],
-            "properties": {}
-        },
-        {
-            "name": "ExpansionName",
-            "type": "Expand",
-            "inputNodes": [
-                {
-                    "name": "MyNode"
-                }
-            ],
-            "properties": {
-                "column": [
-                    {
-                        "node": "expansionNode",
-                        "columnName": "expansionColumn"
-                    }
-                ],
-                "ignoreMissingOrEmpty": true
-            }
+          }
+        ],
+        "duration": {
+          "value": 1,
+          "unit": "Minute"
         }
-    ],
-    "compatibilityLevel": "1.0"
-  }
+      }
+    },
+    {
+      "name": "FieldsManagerName",
+      "type": "ManageFields",
+      "inputNodes": [
+        {
+          "name": "my-eventstream"
+        }
+      ],
+      "properties": {
+        "columns": [
+          {
+            "type": "Rename",
+            "properties": {
+              "column": {
+                "node": "renameNode",
+                "columnName": "renameColumn"
+              }
+            },
+            "alias": "renameAlias"
+          },
+          {
+            "type": "Cast",
+            "properties": {
+              "targetDataType": "BigInt",
+              "column": {
+                "node": "castNode",
+                "columnName": "castColumn"
+              }
+            },
+            "alias": "castAlias"
+          },
+          {
+            "type": "FunctionCall",
+            "properties": {
+              "functionName": "CharIndex",
+              "arguments": [
+                "a",
+                {
+                  "node": "functionCallNode",
+                  "columnName": "functionCallColumn"
+                },
+                1
+              ]
+            },
+            "alias": "indexOf"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AggregatorName",
+      "type": "Aggregate",
+      "inputNodes": [
+        {
+          "name": "my-eventstream"
+        }
+      ],
+      "properties": {
+        "aggregations": [
+          {
+            "aggregateFunction": "Average",
+            "column": {
+              "node": "aggregationNode",
+              "columnName": "aggregationColumn"
+            },
+            "alias": "aggregatedAlias",
+            "partitionBy": [
+              {
+                "node": "partitionByNode",
+                "columnName": "partitionByColumn"
+              }
+            ],
+            "duration": {
+              "value": 1,
+              "unit": "Minute"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "GroupByName",
+      "type": "GroupBy",
+      "inputNodes": [
+        {
+          "name": "my-eventstream"
+        }
+      ],
+      "properties": {
+        "aggregations": [
+          {
+            "aggregateFunction": "Average",
+            "column": {
+              "node": "groupByAggregationNode",
+              "columnName": "groupByAggregationColumn"
+            },
+            "alias": "groupByAggregationAlias"
+          }
+        ],
+        "groupBy": [
+          {
+            "node": "groupByNode",
+            "columnName": "groupByColumn"
+          }
+        ],
+        "window": {
+          "type": "Tumbling",
+          "properties": {
+            "duration": {
+              "value": 5,
+              "unit": "Minute"
+            },
+            "offset": {
+              "value": 1,
+              "unit": "Minute"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "UnionName",
+      "type": "Union",
+      "inputNodes": [
+        {
+          "name": "FilterName"
+        },
+        {
+          "name": "GroupByName"
+        }
+      ],
+      "properties": {}
+    },
+    {
+      "name": "ExpansionName",
+      "type": "Expand",
+      "inputNodes": [
+        {
+          "name": "MyNode"
+        }
+      ],
+      "properties": {
+        "column": {
+          "node": "expansionNode",
+          "columnName": "expansionColumn"
+        },
+        "ignoreMissingOrEmpty": true
+      }
+    }
+  ],
+  "compatibilityLevel": "1.0"
+}
