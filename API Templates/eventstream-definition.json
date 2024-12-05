@@ -371,7 +371,7 @@
       "type": "Aggregate",
       "inputNodes": [
         {
-          "name": "my-eventstream"
+          "name": "my-eventstream-stream"
         }
       ],
       "properties": {
