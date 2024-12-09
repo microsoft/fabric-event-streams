@@ -45,7 +45,9 @@
       "type": "AmazonKinesis",
       "properties": {
         "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
-        "region": "us-east-1"
+        "region": "us-east-1",
+        "startPosition":"LATEST",
+        "startTimestamp": null
       }
     },
     {
@@ -56,8 +58,8 @@
         "topic": "topic",
         "consumerGroupName": "consumerGroupName",
         "autoOffsetReset": "Earliest",
-        "saslMechanism": "PLAIN",
-        "securityProtocol": "SASL_PLAINTEXT"
+        "saslMechanism": "SCRAM-SHA-512",
+        "securityProtocol": "SASL_SSL"
       }
     },
     {
@@ -68,8 +70,8 @@
         "topic": "topic",
         "consumerGroupName": "consumerGroupName",
         "autoOffsetReset": "Latest",
-        "saslMechanism": "SCRAM-SHA-512",
-        "securityProtocol": "SASL_SSL"
+        "saslMechanism": "PLAIN",
+        "securityProtocol": "SASL_PLAINTEXT"
       }
     },
     {
@@ -159,36 +161,23 @@
           "Microsoft.Fabric.ItemReadSucceeded",
           "Microsoft.Fabric.ItemReadFailed"
         ],
-        "advancedFilters": []
+        "filters": [
+          {
+            "operatorType": "operatorType",
+            "key": "schemaName"
+          }
+        ]
       }
     }
   ],
   "destinations": [
-    {
-      "name": "EventhouseDestination",
-      "type": "Eventhouse",
-      "properties": {
-        "dataIngestionMode": "ProcessedIngestion",
-        "workspaceId": "00000000-0000-0000-0000-000000000000",
-        "itemId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
-        "databaseName": "my-database",
-        "tableName": "my-table",
-        "inputSerialization": {
-          "type": "Json",
-          "properties": {
-            "encoding": "UTF8"
-          }
-        }
-      },
-      "inputNodes": []
-    },
     {
       "name": "CustomEndpointDestination",
       "type": "CustomEndpoint",
       "properties": {},
       "inputNodes": [
         {
-          "name": "my-eventstream"
+          "name": "myEventstream-stream"
         }
       ]
     },
@@ -211,7 +200,7 @@
       },
       "inputNodes": [
         {
-          "name": "my-eventstream"
+          "name": "myEventstream-stream"
         }
       ]
     },
@@ -236,9 +225,14 @@
   ],
   "streams": [
     {
-      "name": "my-eventstream",
+      "name": "myEventstream-stream",
       "type": "DefaultStream",
-      "properties": {}
+      "properties": {},
+      "inputNodes": [
+        {
+          "name": "sourceName"
+        }
+      ]
     },
     {
       "name": "DerivedStreamName",
@@ -264,7 +258,7 @@
       "type": "Filter",
       "inputNodes": [
         {
-          "name": "my-eventstream"
+          "name": "myEventstream-stream"
         }
       ],
       "properties": {
@@ -294,7 +288,7 @@
           "name": "FilterName"
         },
         {
-          "name": "my-eventstream"
+          "name": "myEventstream-stream"
         }
       ],
       "properties": {
@@ -322,7 +316,7 @@
       "type": "ManageFields",
       "inputNodes": [
         {
-          "name": "my-eventstream"
+          "name": "myEventstream-stream"
         }
       ],
       "properties": {
@@ -331,7 +325,7 @@
             "type": "Rename",
             "properties": {
               "column": {
-                "node": "renameNode",
+                "node": null,
                 "columnName": "renameColumn"
               }
             },
@@ -342,7 +336,7 @@
             "properties": {
               "targetDataType": "BigInt",
               "column": {
-                "node": "castNode",
+                "node":  null,
                 "columnName": "castColumn"
               }
             },
@@ -355,7 +349,7 @@
               "arguments": [
                 "a",
                 {
-                  "node": "functionCallNode",
+                  "node": null,
                   "columnName": "functionCallColumn"
                 },
                 1
@@ -371,7 +365,7 @@
       "type": "Aggregate",
       "inputNodes": [
         {
-          "name": "my-eventstream-stream"
+          "name": "myEventstream-stream"
         }
       ],
       "properties": {
@@ -379,10 +373,10 @@
           {
             "aggregateFunction": "Average",
             "column": {
-              "node": "aggregationNode",
+              "node": null,
               "columnName": "aggregationColumn"
             },
-            "alias": "aggregatedAlias",
+            "alias": "AVG_columnName",
             "partitionBy": [
               {
                 "node": "partitionByNode",
@@ -402,7 +396,7 @@
       "type": "GroupBy",
       "inputNodes": [
         {
-          "name": "my-eventstream"
+          "name": "myEventstream-stream"
         }
       ],
       "properties": {
@@ -410,7 +404,7 @@
           {
             "aggregateFunction": "Average",
             "column": {
-              "node": "groupByAggregationNode",
+              "node": null,
               "columnName": "groupByAggregationColumn"
             },
             "alias": "groupByAggregationAlias"
@@ -418,7 +412,7 @@
         ],
         "groupBy": [
           {
-            "node": "groupByNode",
+            "node": null,
             "columnName": "groupByColumn"
           }
         ],
@@ -460,7 +454,7 @@
       ],
       "properties": {
         "column": {
-          "node": "expansionNode",
+          "node": null,
           "columnName": "expansionColumn"
         },
         "ignoreMissingOrEmpty": true
