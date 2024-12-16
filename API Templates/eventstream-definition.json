@@ -168,6 +168,57 @@
           }
         ]
       }
+    },
+    {
+      "name": "FabricJobEvents",
+      "type": "FabricJobEvents",
+      "properties": {
+        "eventScope": "Item",
+        "workspaceId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "itemId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "includedEventTypes": [
+          "Microsoft.Fabric.JobEvents.ItemJobCreated",
+          "Microsoft.Fabric.JobEvents.ItemJobStatusChanged",
+          "Microsoft.Fabric.JobEvents.ItemJobSucceeded",
+          "Microsoft.Fabric.JobEvents.ItemJobFailed"
+        ],
+        "filters": [
+          {
+            "operatorType": "IsNotNull",
+            "key": "id"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FabricOneLakeEventss",
+      "type": "FabricOneLakeEvents",
+      "properties": {
+        "tenantId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "workspaceId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "itemId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "oneLakePaths": [
+          "/Tables",
+          "/Files"
+        ],
+        "includedEventTypes": [
+          "Microsoft.Fabric.OneLake.FileCreated",
+          "Microsoft.Fabric.OneLake.FileDeleted",
+          "Microsoft.Fabric.OneLake.FileRenamed",
+          "Microsoft.Fabric.OneLake.FolderCreated",
+          "Microsoft.Fabric.OneLake.FolderDeleted",
+          "Microsoft.Fabric.OneLake.FolderRenamed"
+        ],
+        "filters": [
+          {
+            "values": [
+              "0"
+            ],
+            "operatorType": "StringNotIn",
+            "key": "data.sequencer"
+          }
+        ]
+      }
     }
   ],
   "destinations": [
