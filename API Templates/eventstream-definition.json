@@ -398,12 +398,10 @@
             "properties": {
               "functionName": "CharIndex",
               "arguments": [
-                "a",
                 {
                   "node": null,
                   "columnName": "functionCallColumn"
-                },
-                1
+                }
               ]
             },
             "alias": "indexOf"
