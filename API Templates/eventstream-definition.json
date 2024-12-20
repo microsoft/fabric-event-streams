@@ -398,15 +398,25 @@
             "properties": {
               "functionName": "CharIndex",
               "arguments": [
-                "a",
                 {
-                  "node": null,
-                  "columnName": "functionCallColumn"
+                  "expressionType": "Literal",
+                  "dataType": "Nvarchar(max)",
+                  "value": "aaa"
                 },
-                1
+                {
+                  "expressionType": "ColumnReference",
+                  "node": null,
+                  "columnName": "deviceId",
+                  "columnPathSegments": []
+                },
+                {
+                  "expressionType": "Literal",
+                  "dataType": "BigInt",
+                  "value": "1"
+                }
               ]
             },
-            "alias": "indexOf"
+            "alias": "charindex_number"
           }
         ]
       }
