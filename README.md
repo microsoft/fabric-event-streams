@@ -16,4 +16,4 @@ This folder contains templates for defining Eventstream items in the API body, a
 
 ### Features Samples
 
-These folder focus on specific features of Microsoft Fabric, demonstrating how to leverage them in your projects.z
+This folder focus on specific features of Microsoft Fabric, demonstrating how to leverage them in your projects.
