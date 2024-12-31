@@ -14,6 +14,6 @@ This repository is organized into different sections to help you navigate throug
 
 This folder contains templates for defining Eventstream items in the API body, allowing users to create and manage Eventstream items within a Fabric workspace through the Fabric REST API.
 
-### Features Samples
+### Use Case
 
-This folder focus on specific features of Microsoft Fabric, demonstrating how to leverage them in your projects.
+This folder contains end to end examples of sending data to an eventstream.
