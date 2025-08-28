@@ -17,3 +17,7 @@ This folder contains templates for defining Eventstream items in the API body, a
 ### Use Case
 
 This folder contains end to end examples of sending data to an eventstream.
+
+### References
+
+This folder contains supplementary materials and reference documents relevant to Microsoft Fabric Eventstream. Includes items such as the Certificate Authority (CA) list and other supporting documentation.

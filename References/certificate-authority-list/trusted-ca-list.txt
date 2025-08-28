@@ -1,0 +1,147 @@
+Issuer: OU=AC RAIZ FNMT-RCM, O=FNMT-RCM, C=ES
+Issuer: CN=AC RAIZ FNMT-RCM SERVIDORES SEGUROS, OID.2.5.4.97=VATES-Q2826004J, OU=Ceres, O=FNMT-RCM, C=ES
+Issuer: C=ES, O=ACCV, OU=PKIACCV, CN=ACCVRAIZ1
+   accessMethod: caIssuers
+Issuer: CN=Actalis Authentication Root CA, O=Actalis S.p.A./03358520967, L=Milan, C=IT
+Issuer: CN=AffirmTrust Commercial, O=AffirmTrust, C=US
+Issuer: CN=AffirmTrust Networking, O=AffirmTrust, C=US
+Issuer: CN=AffirmTrust Premium, O=AffirmTrust, C=US
+Issuer: CN=AffirmTrust Premium ECC, O=AffirmTrust, C=US
+Issuer: CN=Amazon Root CA 1, O=Amazon, C=US
+Issuer: CN=Amazon Root CA 2, O=Amazon, C=US
+Issuer: CN=Amazon Root CA 3, O=Amazon, C=US
+Issuer: CN=Amazon Root CA 4, O=Amazon, C=US
+Issuer: CN=ANF Secure Server Root CA, OU=ANF CA Raiz, O=ANF Autoridad de Certificacion, C=ES, SERIALNUMBER=G63287510
+Issuer: C=DE, O=Atos, CN=Atos TrustedRoot 2011
+Issuer: C=DE, O=Atos, CN=Atos TrustedRoot Root CA ECC TLS 2021
+Issuer: C=DE, O=Atos, CN=Atos TrustedRoot Root CA RSA TLS 2021
+Issuer: CN=Autoridad de Certificacion Firmaprofesional CIF A62634068, C=ES
+Issuer: CN=Baltimore CyberTrust Root, OU=CyberTrust, O=Baltimore, C=IE
+Issuer: CN=BJCA Global Root CA1, O=BEIJING CERTIFICATE AUTHORITY, C=CN
+Issuer: CN=BJCA Global Root CA2, O=BEIJING CERTIFICATE AUTHORITY, C=CN
+Issuer: CN=Buypass Class 2 Root CA, O=Buypass AS-983163327, C=NO
+Issuer: CN=Buypass Class 3 Root CA, O=Buypass AS-983163327, C=NO
+Issuer: CN=CA Disig Root R2, O=Disig a.s., L=Bratislava, C=SK
+Issuer: CN=Certainly Root E1, O=Certainly, C=US
+Issuer: CN=Certainly Root R1, O=Certainly, C=US
+Issuer: CN=Certigna, O=Dhimyotis, C=FR
+Issuer: CN=Certigna Root CA, OU=0002 48146308100036, O=Dhimyotis, C=FR
+Issuer: OU=certSIGN ROOT CA, O=certSIGN, C=RO
+Issuer: OU=certSIGN ROOT CA G2, O=CERTSIGN SA, C=RO
+Issuer: CN=Certum EC-384 CA, OU=Certum Certification Authority, O=Asseco Data Systems S.A., C=PL
+Issuer: CN=Certum Trusted Network CA, OU=Certum Certification Authority, O=Unizeto Technologies S.A., C=PL
+Issuer: CN=Certum Trusted Network CA 2, OU=Certum Certification Authority, O=Unizeto Technologies S.A., C=PL
+Issuer: CN=Certum Trusted Root CA, OU=Certum Certification Authority, O=Asseco Data Systems S.A., C=PL
+Issuer: CN=CFCA EV ROOT, O=China Financial Certification Authority, C=CN
+Issuer: CN=CommScope Public Trust ECC Root-01, O=CommScope, C=US
+Issuer: CN=CommScope Public Trust ECC Root-02, O=CommScope, C=US
+Issuer: CN=CommScope Public Trust RSA Root-01, O=CommScope, C=US
+Issuer: CN=CommScope Public Trust RSA Root-02, O=CommScope, C=US
+Issuer: CN=AAA Certificate Services, O=Comodo CA Limited, L=Salford, ST=Greater Manchester, C=GB
+Issuer: CN=COMODO Certification Authority, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB
+Issuer: CN=COMODO ECC Certification Authority, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB
+Issuer: CN=COMODO RSA Certification Authority, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB
+Issuer: CN=D-TRUST BR Root CA 1 2020, O=D-Trust GmbH, C=DE
+Issuer: CN=D-TRUST EV Root CA 1 2020, O=D-Trust GmbH, C=DE
+Issuer: CN=D-TRUST Root Class 3 CA 2 2009, O=D-Trust GmbH, C=DE
+Issuer: CN=D-TRUST Root Class 3 CA 2 EV 2009, O=D-Trust GmbH, C=DE
+Issuer: CN=DigiCert Assured ID Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US
+Issuer: CN=DigiCert Assured ID Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US
+Issuer: CN=DigiCert Assured ID Root G3, OU=www.digicert.com, O=DigiCert Inc, C=US
+Issuer: CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US
+Issuer: CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US
+Issuer: CN=DigiCert Global Root G3, OU=www.digicert.com, O=DigiCert Inc, C=US
+Issuer: CN=DigiCert High Assurance EV Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US
+Issuer: CN=DigiCert TLS ECC P384 Root G5, O="DigiCert, Inc.", C=US
+Issuer: CN=DigiCert TLS RSA4096 Root G5, O="DigiCert, Inc.", C=US
+Issuer: CN=DigiCert Trusted Root G4, OU=www.digicert.com, O=DigiCert Inc, C=US
+Issuer: CN=e-Szigno Root CA 2017, OID.2.5.4.97=VATHU-23584497, O=Microsec Ltd., L=Budapest, C=HU
+Issuer: CN=emSign ECC Root CA - C3, O=eMudhra Inc, OU=emSign PKI, C=US
+Issuer: CN=emSign ECC Root CA - G3, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN
+Issuer: CN=emSign Root CA - C1, O=eMudhra Inc, OU=emSign PKI, C=US
+Issuer: CN=emSign Root CA - G1, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN
+Issuer: CN=Entrust.net Certification Authority (2048), OU=(c) 1999 Entrust.net Limited, OU=www.entrust.net/CPS_2048 incorp. by ref. (limits liab.), O=Entrust.net
+Issuer: CN=Entrust Root Certification Authority, OU="(c) 2006 Entrust, Inc.", OU=www.entrust.net/CPS is incorporated by reference, O="Entrust, Inc.", C=US
+Issuer: CN=Entrust Root Certification Authority - EC1, OU="(c) 2012 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US
+Issuer: CN=Entrust Root Certification Authority - G2, OU="(c) 2009 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US
+Issuer: CN=Entrust Root Certification Authority - G4, OU="(c) 2015 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US
+Issuer: OU=ePKI Root Certification Authority, O="Chunghwa Telecom Co., Ltd.", C=TW
+Issuer: CN=GDCA TrustAUTH R5 ROOT, O="GUANG DONG CERTIFICATE AUTHORITY CO.,LTD.", C=CN
+Issuer: CN=GlobalSign, O=GlobalSign, OU=GlobalSign ECC Root CA - R4
+Issuer: CN=GlobalSign, O=GlobalSign, OU=GlobalSign ECC Root CA - R5
+Issuer: CN=GlobalSign Root CA, OU=Root CA, O=GlobalSign nv-sa, C=BE
+Issuer: CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R3
+Issuer: CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R6
+Issuer: CN=GlobalSign Root E46, O=GlobalSign nv-sa, C=BE
+Issuer: CN=GlobalSign Root R46, O=GlobalSign nv-sa, C=BE
+Issuer: CN=GLOBALTRUST 2020, O=e-commerce monitoring GmbH, C=AT
+Issuer: OU=Go Daddy Class 2 Certification Authority, O="The Go Daddy Group, Inc.", C=US
+Issuer: CN=Go Daddy Root Certificate Authority - G2, O="GoDaddy.com, Inc.", L=Scottsdale, ST=Arizona, C=US
+Issuer: CN=GTS Root R1, O=Google Trust Services LLC, C=US
+Issuer: CN=GTS Root R2, O=Google Trust Services LLC, C=US
+Issuer: CN=GTS Root R3, O=Google Trust Services LLC, C=US
+Issuer: CN=GTS Root R4, O=Google Trust Services LLC, C=US
+Issuer: CN=HARICA TLS ECC Root CA 2021, O=Hellenic Academic and Research Institutions CA, C=GR
+Issuer: CN=HARICA TLS RSA Root CA 2021, O=Hellenic Academic and Research Institutions CA, C=GR
+Issuer: CN=Hellenic Academic and Research Institutions ECC RootCA 2015, O=Hellenic Academic and Research Institutions Cert. Authority, L=Athens, C=GR
+Issuer: CN=Hellenic Academic and Research Institutions RootCA 2015, O=Hellenic Academic and Research Institutions Cert. Authority, L=Athens, C=GR
+Issuer: CN=HiPKI Root CA - G1, O="Chunghwa Telecom Co., Ltd.", C=TW
+Issuer: CN=Hongkong Post Root CA 3, O=Hongkong Post, L=Hong Kong, ST=Hong Kong, C=HK
+Issuer: CN=IdenTrust Commercial Root CA 1, O=IdenTrust, C=US
+Issuer: CN=IdenTrust Public Sector Root CA 1, O=IdenTrust, C=US
+Issuer: CN=ISRG Root X1, O=Internet Security Research Group, C=US
+Issuer: CN=ISRG Root X2, O=Internet Security Research Group, C=US
+Issuer: CN=Izenpe.com, O=IZENPE S.A., C=ES
+Issuer: EMAILADDRESS=info@e-szigno.hu, CN=Microsec e-Szigno Root CA 2009, O=Microsec Ltd., L=Budapest, C=HU
+Issuer: CN=Microsoft ECC Root Certificate Authority 2017, O=Microsoft Corporation, C=US
+Issuer: CN=Microsoft RSA Root Certificate Authority 2017, O=Microsoft Corporation, C=US
+Issuer: CN=NAVER Global Root Certification Authority, O=NAVER BUSINESS PLATFORM Corp., C=KR
+Issuer: CN=NetLock Arany (Class Gold) Főtanúsítvány, OU=Tanúsítványkiadók (Certification Services), O=NetLock Kft., L=Budapest, C=HU
+Issuer: CN=OISTE WISeKey Global Root GB CA, OU=OISTE Foundation Endorsed, O=WISeKey, C=CH
+Issuer: CN=OISTE WISeKey Global Root GC CA, OU=OISTE Foundation Endorsed, O=WISeKey, C=CH
+Issuer: CN=QuoVadis Root CA 1 G3, O=QuoVadis Limited, C=BM
+Issuer: CN=QuoVadis Root CA 2, O=QuoVadis Limited, C=BM
+Issuer: CN=QuoVadis Root CA 2 G3, O=QuoVadis Limited, C=BM
+Issuer: CN=QuoVadis Root CA 3, O=QuoVadis Limited, C=BM
+Issuer: CN=QuoVadis Root CA 3 G3, O=QuoVadis Limited, C=BM
+Issuer: CN=Sectigo Public Server Authentication Root E46, O=Sectigo Limited, C=GB
+Issuer: CN=Sectigo Public Server Authentication Root R46, O=Sectigo Limited, C=GB
+Issuer: CN=Secure Global CA, O=SecureTrust Corporation, C=US
+Issuer: CN=SecureSign RootCA11, O="Japan Certification Services, Inc.", C=JP
+Issuer: CN=SecureTrust CA, O=SecureTrust Corporation, C=US
+Issuer: CN=Security Communication ECC RootCA1, O="SECOM Trust Systems CO.,LTD.", C=JP
+Issuer: OU=Security Communication RootCA1, O=SECOM Trust.net, C=JP
+Issuer: OU=Security Communication RootCA2, O="SECOM Trust Systems CO.,LTD.", C=JP
+Issuer: CN=Security Communication RootCA3, O="SECOM Trust Systems CO.,LTD.", C=JP
+Issuer: CN=SSL.com EV Root Certification Authority ECC, O=SSL Corporation, L=Houston, ST=Texas, C=US
+Issuer: CN=SSL.com EV Root Certification Authority RSA R2, O=SSL Corporation, L=Houston, ST=Texas, C=US
+Issuer: CN=SSL.com Root Certification Authority ECC, O=SSL Corporation, L=Houston, ST=Texas, C=US
+Issuer: CN=SSL.com Root Certification Authority RSA, O=SSL Corporation, L=Houston, ST=Texas, C=US
+Issuer: CN=SSL.com TLS ECC Root CA 2022, O=SSL Corporation, C=US
+Issuer: CN=SSL.com TLS RSA Root CA 2022, O=SSL Corporation, C=US
+Issuer: OU=Starfield Class 2 Certification Authority, O="Starfield Technologies, Inc.", C=US
+Issuer: CN=Starfield Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US
+Issuer: CN=Starfield Services Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US
+Issuer: CN=SwissSign Gold CA - G2, O=SwissSign AG, C=CH
+Issuer: CN=SwissSign Silver CA - G2, O=SwissSign AG, C=CH
+Issuer: CN=SZAFIR ROOT CA2, O=Krajowa Izba Rozliczeniowa S.A., C=PL
+Issuer: CN=T-TeleSec GlobalRoot Class 2, OU=T-Systems Trust Center, O=T-Systems Enterprise Services GmbH, C=DE
+Issuer: CN=T-TeleSec GlobalRoot Class 3, OU=T-Systems Trust Center, O=T-Systems Enterprise Services GmbH, C=DE
+Issuer: CN=Telia Root CA v2, O=Telia Finland Oyj, C=FI
+Issuer: CN=TeliaSonera Root CA v1, O=TeliaSonera
+Issuer: CN=TrustAsia Global Root CA G3, O="TrustAsia Technologies, Inc.", C=CN
+Issuer: CN=TrustAsia Global Root CA G4, O="TrustAsia Technologies, Inc.", C=CN
+Issuer: CN=Trustwave Global Certification Authority, O="Trustwave Holdings, Inc.", L=Chicago, ST=Illinois, C=US
+Issuer: CN=Trustwave Global ECC P256 Certification Authority, O="Trustwave Holdings, Inc.", L=Chicago, ST=Illinois, C=US
+Issuer: CN=Trustwave Global ECC P384 Certification Authority, O="Trustwave Holdings, Inc.", L=Chicago, ST=Illinois, C=US
+Issuer: CN=TUBITAK Kamu SM SSL Kok Sertifikasi - Surum 1, OU=Kamu Sertifikasyon Merkezi - Kamu SM, O=Turkiye Bilimsel ve Teknolojik Arastirma Kurumu - TUBITAK, L=Gebze - Kocaeli, C=TR
+Issuer: CN=TunTrust Root CA, O=Agence Nationale de Certification Electronique, C=TN
+Issuer: CN=TWCA Global Root CA, OU=Root CA, O=TAIWAN-CA, C=TW
+Issuer: CN=TWCA Root Certification Authority, OU=Root CA, O=TAIWAN-CA, C=TW
+Issuer: CN=UCA Extended Validation Root, O=UniTrust, C=CN
+Issuer: CN=UCA Global G2 Root, O=UniTrust, C=CN
+Issuer: CN=USERTrust ECC Certification Authority, O=The USERTRUST Network, L=Jersey City, ST=New Jersey, C=US
+Issuer: CN=USERTrust RSA Certification Authority, O=The USERTRUST Network, L=Jersey City, ST=New Jersey, C=US
+Issuer: CN=vTrus ECC Root CA, O="iTrusChina Co.,Ltd.", C=CN
+Issuer: CN=vTrus Root CA, O="iTrusChina Co.,Ltd.", C=CN
+Issuer: CN=XRamp Global Certification Authority, O=XRamp Security Services Inc, OU=www.xrampsecurity.com, C=US
