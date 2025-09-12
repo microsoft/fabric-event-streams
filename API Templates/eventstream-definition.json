@@ -271,7 +271,28 @@
           }
         }
       },
-      "inputNodes": []
+      "inputNodes": [
+        {
+          "name": "operatorName"
+        }
+      ]
+    },
+    {
+      "name": "EventhouseDirectIngestion",
+      "type": "Eventhouse",
+      "properties": {
+        "dataIngestionMode": "DirectIngestion",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "tableName": "tableName",
+        "connectionName": "connectionName",
+        "mappingRuleName": "mappingRuleName"
+      },
+      "inputNodes": [
+        {
+          "name": "myEventstream-stream"
+        }
+      ]
     }
   ],
   "streams": [
