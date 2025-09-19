@@ -14,6 +14,10 @@ This repository is organized into different sections to help you navigate throug
 
 This folder contains templates for defining Eventstream items in the API body, allowing users to create and manage Eventstream items within a Fabric workspace through the Fabric REST API.
 
+### Eventstream Entra ID Auth samples
+
+This folder contains samples for sending and receiving events through Eventstream's Custom Endpoint using Entra ID authentication.
+
 ### Use Case
 
 This folder contains end to end examples of sending data to an eventstream.
