@@ -146,6 +146,53 @@
       }
     },
     {
+      "name": "AzureEventGridNamespace",
+      "type": "AzureEventGridNamespace",
+      "properties": {
+        "namespaceResourceId": "/subscriptions/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/resourceGroups/aaaaaaaa/providers/Microsoft.EventGrid/namespaces/bbbbbbbbb",
+        "topic": "topicName"
+      }
+    },
+    {
+      "name": "RealTimeWeather",
+      "type": "RealTimeWeather",
+      "properties": {
+        "latitude": 11.11,
+        "longitude": 11.11
+      }
+    },
+    {
+      "name": "SolacePubSub",
+      "type": "SolacePubSub",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "pubSubType": "Queue",
+        "messageVpnName": "messageVpnName",
+        "topics": [],
+        "queue": "queueName",
+        "mapUserProperties": false,
+        "mapSolaceProperties": false
+      }
+    },
+    {
+      "name": "MQTT",
+      "type": "Mqtt",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "serverVersion": "V5",
+        "topic": "topicName"
+      }
+    },
+    {
+      "name": "AzureDataExplorer",
+      "type": "AzureDataExplorer",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "databaseName": "databaseName",
+        "tableNames": "tableNames"
+      }
+    },
+    {
       "name": "FabricWorkspaceItemEvents",
       "type": "FabricWorkspaceItemEvents",
       "properties": {
@@ -350,6 +397,18 @@
             }
           }
         ]
+      }
+    },
+    {
+      "name": "SqlCode",
+      "type": "SQL",
+      "inputNodes": [
+        {
+          "name": "myEventstream-stream"
+        }
+      ],
+      "properties": {
+        "query": "--Init Query\nSELECT * INTO [DerivedStream] FROM [myEventstream-stream]"
       }
     },
     {
