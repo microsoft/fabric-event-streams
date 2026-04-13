@@ -193,6 +193,46 @@
       }
     },
     {
+      "name": "MongoDBCDCSource",
+      "type": "MongoDBCDC",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "includedDatabases": "",
+        "includedCollections": "",
+        "snapshotMode": "Initial"
+      }
+    },
+    {
+      "name": "AzureServiceBusSource",
+      "type": "AzureServiceBus",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "serviceBusType": "Topic",
+        "topicOrQueueName": "topicOrQueueName",
+        "subscriptionName": "subscriptionName"
+      }
+    },
+    {
+      "name": "HttpSource",
+      "type": "Http",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "method": "POST",
+        "requestHeaders": [
+          {
+            "Key": "Content-Type",
+            "Value": "application/json"
+          }
+        ],
+        "requestParameters": [],
+        "requestBody": "",
+        "pollIntervalMs": 15000,
+        "maxRetries": 10,
+        "retryBackoffMs": 3000,
+        "retriableHttpStatusCodes": "500, 502, 503, 504"
+      }
+    },
+    {
       "name": "FabricWorkspaceItemEvents",
       "type": "FabricWorkspaceItemEvents",
       "properties": {
