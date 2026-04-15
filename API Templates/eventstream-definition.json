@@ -233,6 +233,19 @@
       }
     },
     {
+      "name": "FabricCapacityOverviewEvents",
+      "type": "FabricCapacityOverviewEvents",
+      "properties": {
+        "eventScope": "Capacity",
+        "capacityId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "includedEventTypes": [
+          "Microsoft.Fabric.Capacity.State",
+          "Microsoft.Fabric.Capacity.Summary"
+        ],
+        "filters": []
+      }
+    },
+    {
       "name": "FabricWorkspaceItemEvents",
       "type": "FabricWorkspaceItemEvents",
       "properties": {
