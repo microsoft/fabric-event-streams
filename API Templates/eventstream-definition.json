@@ -15,6 +15,15 @@
       }
     },
     {
+      "name": "AzureEventHubExtendedSource",
+      "type": "AzureEventHubExtended",
+      "properties": {
+        "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "consumerGroupName": "$Default",
+        "startPosition": "Earliest"
+      }
+    },
+    {
       "name": "AzureIoTHubSource",
       "type": "AzureIoTHub",
       "properties": {
@@ -46,8 +55,8 @@
       "properties": {
         "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
         "region": "us-east-1",
-        "startPosition":"LATEST",
-        "startTimestamp": null
+        "startPosition": "Latest",
+        "startTimestamp": "2024-01-15T10:30:00Z"
       }
     },
     {
@@ -99,7 +108,8 @@
       "type": "AzureSQLDBCDC",
       "properties": {
         "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
-        "tableName": ""
+        "tableName": "tableName",
+        "decimalHandlingMode": "Precise"
       }
     },
     {
@@ -107,7 +117,8 @@
       "type": "AzureSQLMIDBCDC",
       "properties": {
         "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
-        "tableName": "tableName"
+        "tableName": "tableName",
+        "decimalHandlingMode": "Double"
       }
     },
     {
@@ -115,7 +126,8 @@
       "type": "SQLServerOnVMDBCDC",
       "properties": {
         "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
-        "tableName": "tableName"
+        "tableName": "tableName",
+        "decimalHandlingMode": "String"
       }
     },
     {
@@ -125,7 +137,9 @@
         "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
         "tableName": "tableName",
         "serverId": 9,
-        "port": 3306
+        "port": 3306,
+        "decimalHandlingMode": "Precise",
+        "snapshotLockingMode": "Minimal"
       }
     },
     {
@@ -135,7 +149,10 @@
         "dataConnectionId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
         "tableName": "tableName",
         "slotName": "slotName",
-        "port": 5432
+        "port": 5432,
+        "decimalHandlingMode": "Precise",
+        "publicationName": "my_publication",
+        "publicationAutoCreateMode": "Filtered"
       }
     },
     {
@@ -319,9 +336,45 @@
           }
         ]
       }
+    },
+    {
+      "name": "AzureBlobStorageEventsSource",
+      "type": "AzureBlobStorageEvents",
+      "properties": {
+        "azureBlobStorageEvents": [
+          {
+            "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+            "azureResourceId": "/subscriptions/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/resourceGroups/resourceGroupName/providers/Microsoft.Storage/storageAccounts/storageAccountName",
+            "includedEventTypes": [
+              "Microsoft.Storage.BlobCreated",
+              "Microsoft.Storage.BlobDeleted"
+            ]
+          }
+        ],
+        "streamEvents": true
+      }
     }
   ],
   "destinations": [
+    {
+      "name": "ActivatorDestination",
+      "type": "Activator",
+      "properties": {
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        "inputSerialization": {
+          "type": "Json",
+          "properties": {
+            "encoding": "UTF8"
+          }
+        }
+      },
+      "inputNodes": [
+        {
+          "name": "myEventstream-stream"
+        }
+      ]
+    },
     {
       "name": "CustomEndpointDestination",
       "type": "CustomEndpoint",
@@ -461,7 +514,12 @@
         }
       ],
       "properties": {
-        "query": "--Init Query\nSELECT * INTO [DerivedStream] FROM [myEventstream-stream]"
+        "query": "--Init Query\nSELECT * INTO [DerivedStream] FROM [myEventstream-stream]",
+        "advancedSettings": {
+          "eventsOutOfOrderPolicy": "Adjust",
+          "eventsOutOfOrderMaxDelayInSeconds": 5,
+          "eventsLateArrivalMaxDelayInSeconds": 300
+        }
       }
     },
     {
@@ -647,10 +705,12 @@
         }
       ],
       "properties": {
-        "column": {
-          "node": null,
-          "columnName": "expansionColumn"
-        },
+        "column": [
+          {
+            "node": "expansionNode",
+            "columnName": "expansionColumn"
+          }
+        ],
         "ignoreMissingOrEmpty": true
       }
     }
